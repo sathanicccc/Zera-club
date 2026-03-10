@@ -21,10 +21,16 @@
 
 ---
 
-### 📊 Bot Statistics
+### 📊 GitHub Activity
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=sathanicccc&show_icons=true&theme=tokyonight" alt="Stats" />
+<img src="https://github-readme-stats.vercel.app/api?username=sathanicccc&show_icons=true&theme=radical" alt="Zera Club Stats" />
 </p>
+
+### 🎭 Character Animation
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueXZueXZueXZueXZueXZueXZueXZueXZueXZueXZueXZueZCZfaW50ZXJuYWxfZ2lmX2J5X2lkJmN0PWc/3o7TKMGpxxW3GZZT8s/giphy.gif" width="300">
+</p>
+
 
 ### ⚙️ Deployment Status
 ![Railway](https://img.shields.io/badge/Railway-Deployed-green?style=for-the-badge&logo=railway)
