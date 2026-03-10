@@ -18,9 +18,13 @@ def home():
     return "Zera Club Bot is Running Live!"
 
 def run_flask():
-    # Render നൽകുന്ന PORT എടുക്കുന്നു, അല്ലെങ്കിൽ 8080 ഉപയോഗിക്കുന്നു
-    port = int(os.environ.get("PORT", 8080))
-    flask_app.run(host='0.0.0.0', port=port)
+    # Render നൽകുന്ന PORT ഉണ്ടെങ്കിൽ അത് എടുക്കും, ഇല്ലെങ്കിൽ 10000 ഉപയോഗിക്കും
+    port = int(os.environ.get("PORT", 10000))
+    try:
+        flask_app.run(host='0.0.0.0', port=port)
+    except Exception as e:
+        print(f"Error starting Flask: {e}")
+
 
 # ബോട്ട് റൺ ചെയ്യുന്നതിനൊപ്പം ബാക്ക്ഗ്രൗണ്ടിൽ സർവർ സ്റ്റാർട്ട് ചെയ്യുന്നു
 Thread(target=run_flask).start()
