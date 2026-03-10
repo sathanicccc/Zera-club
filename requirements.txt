@@ -3,5 +3,3 @@ tgcrypto
 gtts
 pillow
 phonenumbers
-flask
-gunicorn
