@@ -1,15 +1,32 @@
 import os
 import asyncio
+import time
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from gtts import gTTS
 from PIL import Image
 import phonenumbers
 from phonenumbers import geocoder, carrier
-import time
+from flask import Flask
+from threading import Thread
 
-# Credentials
-API_ID = int(os.environ.get("API_ID", 36579530))
+# --- Flask Server for Render Keep-Alive ---
+flask_app = Flask(__name__)
+
+@flask_app.route('/')
+def home():
+    return "Zera Club Bot is Running Live!"
+
+def run_flask():
+    # Render നൽകുന്ന PORT എടുക്കുന്നു, അല്ലെങ്കിൽ 8080 ഉപയോഗിക്കുന്നു
+    port = int(os.environ.get("PORT", 8080))
+    flask_app.run(host='0.0.0.0', port=port)
+
+# ബോട്ട് റൺ ചെയ്യുന്നതിനൊപ്പം ബാക്ക്ഗ്രൗണ്ടിൽ സർവർ സ്റ്റാർട്ട് ചെയ്യുന്നു
+Thread(target=run_flask).start()
+
+# --- Bot Credentials ---
+API_ID = int(os.environ.get("API_ID", 26579530))
 API_HASH = os.environ.get("API_HASH", "ea3396d24b8f39dd603bbcc4516c37db")
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "8682815768:AAEmriTbj19WQRJCJTsjpwVWa1mrkx21TFo")
 
@@ -34,8 +51,8 @@ async def start(client, message):
         "Commands ariyan /help click cheyyu!"
     )
     buttons = InlineKeyboardMarkup([
-        [InlineKeyboardButton("Developer 👨‍💻", url="https://t.me/your_username")],
-        [InlineKeyboardButton("Zera Club Support 🛡️", url="https://t.me/your_channel")]
+        [InlineKeyboardButton("Developer 👨‍💻", url="https://t.me/sathanicccc")],
+        [InlineKeyboardButton("Zera Club Support 🛡️", url="https://t.me/zera_support")]
     ])
     await message.reply_text(welcome_text, reply_markup=buttons)
 
@@ -53,7 +70,7 @@ async def tts_handler(client, message):
     await m.delete()
     os.remove("zera_voice.mp3")
 
-# 2. Image to Sticker (Photo ayachal mathi)
+# 2. Image to Sticker
 @app.on_message(filters.photo)
 async def img_sticker(client, message):
     m = await message.reply_text("🪄 Converting to Sticker...")
@@ -65,7 +82,7 @@ async def img_sticker(client, message):
     os.remove(path)
     os.remove("zera_sticker.webp")
 
-# 3. Phone Info Tracker (/info +91xxxx)
+# 3. Phone Info Tracker
 @app.on_message(filters.command("info"))
 async def phone_info(client, message):
     if len(message.command) < 2:
@@ -80,28 +97,18 @@ async def phone_info(client, message):
     except:
         await message.reply_text("Valid aaya number nalku (with +91).")
 
-# 4. YouTube Audio Downloader (/song link)
-@app.on_message(filters.command("song"))
-async def song_dl(client, message):
-    if len(message.command) < 2:
-        return await message.reply_text("Usage: `/song youtube_link`")
-    
-    url = message.command[1]
-    m = await message.reply_text("📥 Downloading Song... Please wait.")
-    # Advanced yt-dlp logic ivide add cheyyam
-    await m.edit("Server Load kaaranam ee feature Railway-il enable cheyyan high storage venam.")
-
-# 5. Help Command
+# 4. Help Command
 @app.on_message(filters.command("help"))
 async def help_cmd(client, message):
     help_text = (
         "**ZERA CLUB HELP MENU**\n\n"
         "🔹 /tts [text] - Malayalam Voice\n"
         "🔹 /info [number] - Tracking\n"
-        "🔹 /song [link] - YT Music\n"
         "🔹 Photo Ayakkuka - Sticker aakan\n"
     )
     await message.reply_text(help_text)
 
+print("Zera Club Bot Started Successfully!")
+app.run()
 print("Zera Club Bot Started Successfully!")
 app.run()
