@@ -4,3 +4,4 @@ gtts
 pillow
 phonenumbers
 flask
+gunicorn
