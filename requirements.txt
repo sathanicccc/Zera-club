@@ -1,7 +1,6 @@
 pyrogram
 tgcrypto
-yt-dlp
-gTTS
-Pillow
+gtts
+pillow
 phonenumbers
-requests
+flask
