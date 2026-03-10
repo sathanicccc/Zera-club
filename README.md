@@ -1,40 +1,43 @@
-# <p align="center">✨ ZERA CLUB MULTI-BOT ✨</p>
+# <p align="center">👋 Hi, I'm ZERA CLUB Developer!</p>
+
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00F7FF&center=true&vCenter=true&width=435&lines=Welcome+to+Zera+Club;Ultra+Fast+Response;Malayalam+TTS+Support;Image+to+Sticker+Converter" alt="Typing SVG" />
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueXZueXZueXZueXZueXZueXZueXZueXZueXZueXZueXZueZCZfaW50ZXJuYWxfZ2lmX2J5X2lkJmN0PWc/3o7TKMGpxxW3GZZT8s/giphy.gif" width="200">
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/SACHIN-0101/SACHIN-0101/main/assets/bot-animation.gif" width="200" alt="Bot Animation">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00F7FF&center=true&vCenter=true&width=435&lines=Full+Stack+Bot+Developer;Python+Enthusiast;Telegram+API+Expert;Welcome+to+my+Profile" alt="Typing SVG" />
 </p>
 
 ---
 
-### 🚀 About Zera Club
-**Zera Club** എന്നത് ഹൈ-സ്പീഡ് റെസ്പോൺസ് നൽകുന്ന ഒരു മൾട്ടി-പർപ്പസ് ടെലിഗ്രാം ബോട്ട് ആണ്. 
-
-### 🛠 Features Included
-- ⚡ **Turbo Speed:** 0.6s response rate.
-- 🗣️ **Malayalam TTS:** Real-time voice generation.
-- 🖼️ **Sticker Maker:** Fast photo to sticker conversion.
-- 📱 **Number Tracker:** Indian number details provider.
-- 🎵 **Song DL:** High-quality audio downloader.
+### 🚀 About Me
+- 🔭 I’m currently working on **Zera Club Telegram Bot**.
+- 🌱 I’m currently learning **Advanced Python & Backend Deployment**.
+- 💬 Ask me about **Bot Development or Railway Hosting**.
+- 📫 Reach me at: [Telegram](https://t.me/sathanicccc)
 
 ---
 
-### 📊 GitHub Activity
-<p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=sathanicccc&show_icons=true&theme=radical" alt="Zera Club Stats" />
+### 🛠 Tech Stack
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" />
+  <img src="https://img.shields.io/badge/Railway-131313?style=for-the-badge&logo=railway&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
 </p>
-
-### 🎭 Character Animation
-<p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueXZueXZueXZueXZueXZueXZueXZueXZueXZueXZueXZueZCZfaW50ZXJuYWxfZ2lmX2J5X2lkJmN0PWc/3o7TKMGpxxW3GZZT8s/giphy.gif" width="300">
-</p>
-
-
-### ⚙️ Deployment Status
-![Railway](https://img.shields.io/badge/Railway-Deployed-green?style=for-the-badge&logo=railway)
-![GitHub Actions](https://img.shields.io/badge/Actions-Running-blue?style=for-the-badge&logo=github-actions)
 
 ---
-<p align="center"> Developed with ❤️ by <b>sathanicccc</b> </p>
+
+### 📊 My GitHub Stats
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=sathanicccc&show_icons=true&theme=tokyonight" alt="Stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sathanicccc&theme=tokyonight" alt="Streak" />
+</p>
+
+---
+<p align="center">
+<img src="https://capsule-render.vercel.app/render?type=waving&color=auto&height=100&section=footer" />
+</p>
