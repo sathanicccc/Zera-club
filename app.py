@@ -9,9 +9,9 @@ from phonenumbers import geocoder, carrier
 import time
 
 # Credentials
-API_ID = int(os.environ.get("API_ID", 12345))
-API_HASH = os.environ.get("API_HASH", "your_hash")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "your_token")
+API_ID = int(os.environ.get("API_ID", 36579530))
+API_HASH = os.environ.get("API_HASH", "ea3396d24b8f39dd603bbcc4516c37db")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8682815768:AAEmriTbj19WQRJCJTsjpwVWa1mrkx21TFo")
 
 app = Client("zera_club_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
